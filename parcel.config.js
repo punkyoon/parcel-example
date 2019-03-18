@@ -10,17 +10,17 @@ const entryFiles = [
 
 // Bundler options
 const options = {
-    outDir: './dist',
+    outDir: process.env.NODE_ENV === 'production' ? './build' : './dist',
     outFile: 'index.html',
     publicUrl: '../',
     watch: false,
     cache: false,
     contentHash: true,
-    minify: true,
+    minify: process.env.NODE_ENV === 'production' ? true : false,
     target: 'browser',
     bundleNodeModules: false,
     logLevel: 4,
-    sourceMaps: false,
+    sourceMaps: process.env.NODE_ENV === 'production' ? false : true,
     detailedReport: true
 };
 

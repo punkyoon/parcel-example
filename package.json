@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Bundling simple HTML + JS pages with parcel-bundler",
   "scripts": {
-    "build:stag": "node parcel.config.js build",
-    "build:prod": ""
+    "build:stag": "NODE_ENV=staging node parcel.config.js",
+    "build:prod": "NODE_ENV=production node parcel.config.js"
   },
   "repository": {
     "type": "git",

@@ -38,7 +38,11 @@ $ npm run build:stag
 $ open dist/first-example/index.html
 $ open dist/second-example/index.html
 
-# Build for prod (WIP)
+# Build for prod
+$ npm run build:prod
+# Open local build
+$ open build/first-example/index.html
+$ open build/second-example/index.html
 ```
 
 ## License
